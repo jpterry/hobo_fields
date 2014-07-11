@@ -13,9 +13,9 @@ module HoboFields
     attr_reader :model
 
 
-    def timestamps
-      field(:created_at, :datetime)
-      field(:updated_at, :datetime)
+    def timestamps(*options)
+      field(:created_at, :datetime, *options)
+      field(:updated_at, :datetime, *options)
     end
 
 
